@@ -1,0 +1,31 @@
+{
+  "name": "quick-catch",
+  "author": "fuqingmeng",
+  "url": "https://github.com/fuqingmeng/quick-catch",
+  "version": "0.1.2",
+  "minAppVersion": "3.0.0",
+  "kernels": [],
+  "backends": ["windows"],
+  "frontends": ["desktop", "desktop-window"],
+  "disabledInPublish": true,
+  "displayName": {
+    "default": "One-Tap Note",
+    "zh-CN": "一键记事"
+  },
+  "description": {
+    "default": "Press Shift+S anywhere to summon a floating one-tap note panel; the note is saved directly into your default notebook.",
+    "zh-CN": "在任何地方按 Shift+S 唤出悬浮记事面板，记完直接写入默认笔记本"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh-CN": "README.zh-CN.md"
+  },
+  "keywords": [
+    "一键记事",
+    "记事",
+    "quick note",
+    "one-tap note",
+    "quick catch",
+    "全局快捷键"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "quickNotePanelTitle": "One-Tap Note",
+  "quickNoteHint": "Enter to submit, Shift+Enter for newline",
+  "quickNotePlaceholder": "Type your note...",
+  "quickNoteEmpty": "Note is empty",
+  "quickNoteCreated": "Created",
+  "quickNoteFailed": "Failed to create note",
+  "quickNoteConnFailed": "Connection failed",
+  "quickNoteNoResponse": "No response, please retry",
+  "quickNoteNotConfigured": "Default notebook is not set yet",
+  "settingsTooltip": "Set default notebook",
+  "settingsPanelTitle": "quick-catch Settings",
+  "quickNoteNotebookLabel": "Default notebook",
+  "quickNoteHotkeyLabel": "Hotkey",
+  "hotkeyHint": "Customizable in Settings → Shortcuts → Plugins",
+  "notSet": "Not set",
+  "confirm": "OK",
+  "cancel": "Cancel",
+  "creating": "Creating...",
+  "settingsSaved": "Settings saved",
+  "emptyNotebooks": "No available notebooks. Please create a notebook in SiYuan first."
+}

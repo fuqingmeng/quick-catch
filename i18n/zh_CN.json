@@ -1,0 +1,22 @@
+{
+  "quickNotePanelTitle": "一键记事",
+  "quickNoteHint": "Enter 提交，Shift+Enter 换行",
+  "quickNotePlaceholder": "输入内容…",
+  "quickNoteEmpty": "内容为空",
+  "quickNoteCreated": "已创建",
+  "quickNoteFailed": "创建失败",
+  "quickNoteConnFailed": "连接失败",
+  "quickNoteNoResponse": "无响应，请重试",
+  "quickNoteNotConfigured": "尚未设置默认笔记本",
+  "settingsTooltip": "设置默认笔记本",
+  "settingsPanelTitle": "quick-catch 设置",
+  "quickNoteNotebookLabel": "记事默认笔记本",
+  "quickNoteHotkeyLabel": "唤出快捷键",
+  "hotkeyHint": "可在「设置 → 快捷键 → 插件」中修改",
+  "notSet": "未设置",
+  "confirm": "确定",
+  "cancel": "取消",
+  "creating": "创建中...",
+  "settingsSaved": "设置已保存",
+  "emptyNotebooks": "暂无可用笔记本，请先在思源笔记中创建笔记本。"
+}

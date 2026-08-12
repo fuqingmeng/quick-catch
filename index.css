@@ -1,0 +1,35 @@
+/* 速记设置面板 */
+.dnt-settings__label {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--b3-theme-on-background);
+    opacity: 0.8;
+}
+
+.dnt-settings__select {
+    margin-bottom: 12px;
+}
+
+.dnt-settings__hotkey {
+    margin-top: 4px;
+    color: var(--b3-theme-on-background);
+    opacity: 0.75;
+    font-size: 12px;
+}
+
+.dnt-settings__hotkey code {
+    background: var(--b3-theme-background-light);
+    padding: 1px 6px;
+    border-radius: 4px;
+}
+
+.dnt-panel__empty {
+    margin-top: 12px;
+    color: var(--b3-theme-on-background);
+}
+
+/* 回退面板（主窗口内） */
+.dnt-quicknote__input {
+    min-height: 120px;
+    resize: vertical;
+}
