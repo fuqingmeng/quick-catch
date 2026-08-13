@@ -13,8 +13,8 @@
     "zh-CN": "一键记事"
   },
   "description": {
-    "default": "Press Shift+S anywhere to summon a floating one-tap note panel; the note is saved directly into your default notebook.",
-    "zh-CN": "在任何地方按 Shift+S 唤出悬浮记事面板，记完直接写入默认笔记本"
+    "default": "Press the configured hotkey anywhere to summon a floating one-tap note panel; the note is saved directly into your default notebook.",
+    "zh-CN": "在任何地方按设置好的快捷键唤出悬浮记事面板，记完直接写入默认笔记本"
   },
   "readme": {
     "default": "README.md",
