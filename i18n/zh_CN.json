@@ -12,7 +12,7 @@
   "settingsPanelTitle": "quick-catch 设置",
   "quickNoteNotebookLabel": "记事默认笔记本",
   "quickNoteHotkeyLabel": "唤出快捷键",
-  "hotkeyHint": "可在「设置 → 快捷键 → 插件」中修改",
+  "hotkeyHint": "在「设置 → 快捷键 → 插件」中设置",
   "notSet": "未设置",
   "confirm": "确定",
   "cancel": "取消",

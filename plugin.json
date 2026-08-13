@@ -2,7 +2,7 @@
   "name": "quick-catch",
   "author": "fuqingmeng",
   "url": "https://github.com/fuqingmeng/quick-catch",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "minAppVersion": "3.0.0",
   "kernels": [],
   "backends": ["windows"],

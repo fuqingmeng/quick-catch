@@ -12,7 +12,7 @@
   "settingsPanelTitle": "quick-catch Settings",
   "quickNoteNotebookLabel": "Default notebook",
   "quickNoteHotkeyLabel": "Hotkey",
-  "hotkeyHint": "Customizable in Settings → Shortcuts → Plugins",
+  "hotkeyHint": "Set it in Settings → Shortcuts → Plugins",
   "notSet": "Not set",
   "confirm": "OK",
   "cancel": "Cancel",

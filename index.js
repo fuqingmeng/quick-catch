@@ -1,13 +1,12 @@
 /*
  * quick-catch - 一键记事 / One-tap note
- * 按 Shift+S（可自定义）在任何地方唤出悬浮记事面板，确认后直接写入默认笔记本。
- * 仅 Windows 支持。面板为独立的置顶小窗口：不打断当前操作、可拖动、记住位置、跟随思源主题。
+ * 快捷键由用户在「设置 → 快捷键 → 插件」中自行设置，设置后在任意地方唤出悬浮记事面板，
+ * 确认后直接写入默认笔记本。仅 Windows 支持。面板为独立的置顶小窗口：不打断当前操作。
  */
 const {Plugin, Dialog, showMessage, fetchSyncPost, getFrontend} = require("siyuan");
 
 const STORAGE_KEY = "config.json";
 const COMMAND_QUICK_NOTE = "globalQuickNote";
-const DEFAULT_QUICK_NOTE_HOTKEY = "⇧S";
 
 const escapeHtml = (text) => {
     return String(text).replace(/[&<>"']/g, (char) => ({
@@ -41,17 +40,17 @@ module.exports = class QuickCatch extends Plugin {
 <path d="M19 3L8 17h6l-2 12 13-16h-7l1-10z"/>
 </symbol>`);
 
-        // 全局快捷键（桌面端注册为系统级全局快捷键，思源在后台时也可唤起）
+        // 全局快捷键：无默认值，由用户在「设置 → 快捷键 → 插件」中自行设置后生效
         this.addCommand({
             langKey: COMMAND_QUICK_NOTE,
-            hotkey: DEFAULT_QUICK_NOTE_HOTKEY,
+            hotkey: "",
             globalCallback: () => {
                 this.showQuickNote();
             },
         });
         const keymap = window.siyuan.config && window.siyuan.config.keymap && window.siyuan.config.keymap.plugin &&
             window.siyuan.config.keymap.plugin[this.name] && window.siyuan.config.keymap.plugin[this.name][COMMAND_QUICK_NOTE];
-        this.quickNoteHotkey = (keymap && keymap.custom) || DEFAULT_QUICK_NOTE_HOTKEY;
+        this.quickNoteHotkey = (keymap && keymap.custom) || "";
 
         this.quickNotePanelWin = null;
         this.initQuickNoteIpc();
@@ -603,7 +602,7 @@ button {
             content: `<div class="b3-dialog__content dnt-settings">
     <label class="dnt-settings__label">${this.i18n.quickNoteNotebookLabel}</label>
     <select class="b3-select fn__block dnt-settings__select"${notebooks.length === 0 ? " disabled" : ""}>${options.join("")}</select>
-    <div class="dnt-settings__hotkey">${this.i18n.quickNoteHotkeyLabel}：<code>${escapeHtml(this.quickNoteHotkey)}</code>（${this.i18n.hotkeyHint}）</div>
+    <div class="dnt-settings__hotkey">${this.i18n.quickNoteHotkeyLabel}：<code>${escapeHtml(this.quickNoteHotkey || this.i18n.notSet)}</code>（${this.i18n.hotkeyHint}）</div>
     ${emptyHtml}
 </div>
 <div class="b3-dialog__action">
